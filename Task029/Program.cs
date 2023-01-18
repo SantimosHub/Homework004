@@ -13,6 +13,4 @@ int[] GetArray()
     return arr;
 }
 
-
-int[] array = GetArray();
-Console.WriteLine($" [ {String.Join(", ", array)} ] ");
+Console.WriteLine($" [ {String.Join(", ", GetArray())} ] ");
