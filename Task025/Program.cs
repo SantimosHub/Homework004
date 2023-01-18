@@ -2,7 +2,7 @@
 int ExpResult(int numberA, int numberB)
 {
     int result = numberA;
-    for (int i = 2; i <= numberB; i++) 
+    for (int i = 1; i < numberB; i++)
     {
         result *= numberA;
     }
@@ -14,4 +14,4 @@ int numA = int.Parse(Console.ReadLine());
 Console.Write("Введите число B: ");
 int numB = int.Parse(Console.ReadLine());
 
-Console.WriteLine($"{numA} в степени {numB} = {ExpResult(numA, Math.Abs (numB))}");
+Console.WriteLine($"{numA} в степени {Math.Abs(numB)} = {ExpResult(numA, Math.Abs(numB))}");
